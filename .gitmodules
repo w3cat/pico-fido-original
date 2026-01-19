@@ -1,3 +1,4 @@
 [submodule "pico-keys-sdk"]
 	path = pico-keys-sdk
 	url = https://github.com/w3cat/pico-keys-sdk
+    branch = main
