@@ -1,8 +1,8 @@
 name: "Nightly deploy"
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
+#  schedule:
+#    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
         run: |
            ./workflows/autobuild.sh pico
            ./build_pico_fido.sh --no-eddsa
-           ./workflows/autobuild.sh esp32
+#           ./workflows/autobuild.sh esp32
       - name: Delete private key
         run: rm private.pem
       - name: Update nightly release
